@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O Nama | Golden Style</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="aboutus.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="nav container">
+        <a class="brand" href="index.html" aria-label="Golden Style početna stranica">
+          <img src="images/logo.png" alt="Golden Style" />
+        </a>
+        <button class="mobile-menu-toggle" type="button" aria-label="Otvori navigacioni meni" aria-expanded="false" aria-controls="site-navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="site-navigation">
+          <a href="index.html">Početna</a>
+          <a href="services.html">Usluge</a>
+          <a class="active" href="aboutus.html">O nama</a>
+          <a href="contact.html">Kontakt</a>
+        </div>
+      </nav>
+
+      <div class="container hero-inner">
+        <p class="autenticnidizajn">O Studiju</p>
+        <h1>Gdje se luksuz, detalji i udobnost spajaju.</h1>
+        <p>Golden Style je prefinjeni kozmetički studio posvećen opuštajućoj usluzi, besprijekornih detalja i prilagođenog iskustva za klijente</p>
+      </div>
+    </header>
+
+    <section class="lux-sections container" aria-label="Studio features">
+      <article class="lux-section lux-initial">
+        <div class="lux-inner">
+          <figure class="lux-media">
+            <img src="images/onama1.png" alt="O nama" />
+          </figure>
+          <div class="lux-content">
+            <h2>Mjesto gdje njega postaje ritual.</h2>
+            <p>Golden Style je vaša oaza lepote, njege i opuštanja. Specijalizovani smo za sveobuhvatnu njegu – od profesionalnog stilizovanja noktiju, preko luksuznih i ciljanih tretmana lica, do savremenih metoda nege i preoblikovanja tela. Naš cilj je jednostavan: da kroz personalizovan pristup i prijatan ambijent osiguramo da se svaki put kada kročite u naš studio osjećate posebno, njegovano i samouvjereno.</p>
+            <p class="lux-muted">Vaš sjaj počinje ovde</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lux-section lux-section--reverse">
+        <div class="lux-inner">
+          <figure class="lux-media">
+            <img src="images/onama.png" alt="Opuštajući enterijer salona" />
+          </figure>
+          <div class="lux-content">
+            <h2>Mirna i birana atmosfera</h2>
+            <p> **Ekskluzivna zona za tretmane lica i tela, opremljena naprednim <b style="color: black;">Skeyndor</b> preparatima i udobnim ležajem za potpuno opuštanje i vrhunsku njegu.** Svaki termin je dizajniran kao privatni kutak – tih, udoban i savršeno detaljan.</p>
+            <p class="lux-muted">Intiman ambijent u potpunosti posvećen vašoj udobnosti i opuštanju.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="lux-section">
+        <div class="lux-inner">
+          <figure class="lux-media">
+            <img src="images/ledmaska.png" alt="Skincare and polish" />
+          </figure>
+          <div class="lux-content">
+            <h2>Fokusirana na tradiciju kvaliteta i poverenje</h2>
+            <p> Pažljivo biramo preparate i tehnike – od vrhunske kozmetike za lice do precizne estetike noktiju i njege tela – kako bismo garantovali rezultate koji se vide i osjećaju</p>        
+            <p class="lux-muted">Zakažite svoj termin i doživite Golden Style iskustvo. <br> <a class="lux-cta-btn" href="contact.html" role="button" aria-label="Zakažite termin">Rezervišite termin</a></p>
+          </div>
+        </div>
+      </article>
+        <!-- CTA: unique, scoped to lux sections -->
+  <!--     <div class="lux-cta-wrap">
+          <div class="lux-cta">
+            <p class="lux-cta-text">Zakažite svoj termin i doživite Golden Style iskustvo.</p>
+            <a class="lux-cta-btn" href="contact.html" role="button" aria-label="Zakažite termin">Rezervišite termin</a>
+          </div>
+        </div>-->
+    </section>
+
+    <main class="container about-grid">
+      <section class="about-card">
+        <h2>Naša filozofija</h2>
+        <p>Svaki tretman je osmišljen da pruži osećaj lične posvećenosti, luksuza i lakoće. Od prve konsultacije do konačnog rezultata, fokusiramo se na udobnost, preciznost i vrhunsku lepotu.</p>
+      </section>
+      <section class="about-card">
+        <h2>Zašto se klijenti vraćaju?</h2>
+        <p>Luksuzna završna obrada, pažljiva njega i topla atmosfera u studiju čine da se svaka posjeta osjeća kao privatni bijeg od svakodnevice.</p>
+      </section>
+      <section class="about-card">
+        <h2>Istaknute prednosti studija</h2>
+        <ul>
+          <li>Precizna umjetnost njege noktiju</li>
+          <li>Napredni tretmani lica i rituali za sjaj kože</li>
+          <li>Usluga zasnovana na zakazivanju i posvećena udobnosti</li>
+        </ul>
+      </section>
+    </main>
+    <section class="map-section container">
+      <h2>Lokacija</h2>
+      <div class="map-wrapper" style="width:100%;height:400px;">
+        <iframe
+          src="https://www.google.com/maps?q=27.marta%2046/1,+Bijeljina+73600&output=embed"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+    <script src="nav.js" defer></script>
+    <script src="aboutus.js" defer></script>
+  </body>
+</html>

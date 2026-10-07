@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usluge | Golden Style</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="services.css" />
+  </head>
+  <body>
+    <a class="whatsapp-float" href="https://wa.me/38765730749?text=Hi%20I%20would%20love%20more%20details%20about%20your%20services" target="_blank" rel="noreferrer">💬 Pošaljite poruku</a>
+
+    <header class="page-header">
+      <nav class="nav container">
+        <a class="brand" href="index.html" aria-label="Golden Style početna stranica">
+          <img src="images/logo.png" alt="Golden Style" />
+        </a>
+        <button class="mobile-menu-toggle" type="button" aria-label="Otvori navigacioni meni" aria-expanded="false" aria-controls="site-navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="site-navigation">
+          <a href="index.html">Početna</a>
+          <a class="active" href="services.html">Usluge</a>
+          <a href="aboutus.html">O nama</a>
+          <a href="contact.html">Kontakt</a>
+        </div>
+      </nav>
+
+      <div class="container hero-inner">
+        <p class="autenticnidizajn">Luksuzni meni usluga</p>
+        <h1>Naše usluge</h1>
+        <p>Vrhunska njega za nokte, trepavice, obrve, kožu, tijelo i blistavi sjaj.</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="service-cards">
+        <article class="service-card">
+          <img src="images/nokti8.png" alt="Gel set" />
+          <div>
+            <h3>Gel set (Izlivanje / Gel na prirodne nokte) </h3>
+            <p>Profesionalna gel tehnika za čvrste i lijepo oblikovane nokte, prilagođena vašim potrebama.</p>
+            <span>Na upit</span>
+            <a class="btn btn-primary" href="contact.html?service=Gel%20Set">Zakaži ovu uslugu</a>
+          </div>
+        </article>
+        <article class="service-card">
+          <img src="images/pedikircrop.png" alt="Pedikir"  />
+          <div>
+            <h3>Pedikir</h3>
+            <p>Relaksirajuća pedikir terapija za savršeno oblikovane i negovane noge.</p>
+            <span>Na upit</span>
+            <a class="btn btn-primary" href="contact.html?service=Pedikir">Zakaži ovu uslugu</a>
+          </div>
+        </article>
+        <!--<article class="service-card">
+          <img src="images/Screenshot 2026-08-07 134046.png" alt="Acrylic sculpt" />
+          <div>
+            <h3>Acrylic Sculpt</h3>
+            <p>Strong structure and glamorous length for confident impact.</p>
+            <span>Na upit</span>
+            <a class="btn btn-primary" href="contact.html?service=Acrylic%20Sculpt">Zakaži ovu uslugu</a>
+          </div>-->
+        </article>
+        <article class="service-card">
+          <img src="images/Screenshot 2026-08-10 152332.png" alt="Luksuzni tretman lica" />
+          <div>
+            <h3>Luksuzni tretman lica</h3>
+            <p>Njega za blistavu kožu sa umirujućom, personalizovanom završnicom.</p>
+            <span>Na upit</span>
+            <button class="btn btn-primary face-treatment-button" type="button">Zakaži ovu uslugu</button>
+          </div>
+        </article>
+        <article class="service-card">
+          <img src="images/Screenshot 2026-08-07 155519.png" alt="Lash lift" />
+          <div>
+            <h3>Podizanje trepavica</h3>
+            <p>Profesionalno podizanje prirodnih trepavica koje vizuelno otvara pogled i naglašava njihov prirodan oblik </p>
+            <span>Na upit</span>
+            <a class="btn btn-primary" href="contact.html?service=Lash%20Lift">Zakaži ovu uslugu</a>
+          </div>
+        </article>
+        <article class="service-card">
+          <img src="images/Screenshot 2026-08-10 144016.png" alt="Lipomodelovanje" />
+          <div>
+            <h3>Lipomodelovanje</h3>
+            <p>Napredan tretman preoblikovanja tela koji ciljano topi masne naslage, zateže kožu i vraća joj tonus, pružajući vam vidljive rezultate i definisanu siluetu već nakon nekoliko dolazaka.</p>
+            <span>Na upit</span>
+            <a class="btn btn-primary" href="contact.html?service=Lipomodelovanje">Zakaži ovu uslugu</a>
+          </div>
+        </article>
+        <article class="service-card">
+          <img src="images/Screenshot 2026-08-10 151345.png" alt="Presoterapija" />
+          <div>
+            <h3>Presoterapija</h3>
+            <p>Tretman koji podstiče cirkulaciju, smanjuje zadržavanje tečnosti i doprinosti osjećaju lakoće i opuštenosti.</p>
+            <span>Na upit</span>
+            <a class="btn btn-primary" href="contact.html?service=Presoterapija">Zakaži ovu uslugu</a>
+          </div>
+        </article>
+      </section>
+
+      <div class="service-detail-modal" id="serviceDetailModal" aria-hidden="true">
+        <div class="service-detail-modal-card" role="dialog" aria-modal="true" aria-labelledby="serviceDetailTitle">
+          <button class="modal-close service-detail-modal-close" type="button" aria-label="Zatvori detalje usluge">×</button>
+          <img id="serviceDetailImage" src="" alt="" />
+          <h2 id="serviceDetailTitle"></h2>
+          <p id="serviceDetailDescription"></p>
+          <a class="btn btn-primary" id="serviceDetailBooking" href="contact.html">Zakaži ovu uslugu</a>
+        </div>
+      </div>
+
+      <section class="gallery-section" id="gallery">
+        <div class="section-heading">
+          <p class="autenticnidizajn">Galerija dizajna noktiju</p>
+          
+        </div>
+
+        <div class="filters">
+          <button class="filter-chip active" data-filter="all">Sve</button>
+          <button class="filter-chip" data-filter="gel">Gel</button>
+          <button class="filter-chip" data-filter="french">Frenč</button>
+          <button class="filter-chip" data-filter="art">Umjetnost/dizajn</button>
+          <button class="filter-chip" data-filter="bridal">Svečani</button>
+          <button class="filter-chip" data-filter="glossy">Sjaj i glamur</button>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="gallery-card" data-category="gel glossy" data-model-number="01">
+            <span class="model-number" aria-label="Model 01">01</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 01"><img src="images/nokti10.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="acrylic bridal" data-model-number="02">
+            <span class="model-number" aria-label="Model 02">02</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 02"><img src="images/Screenshot 2026-08-07 134046.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="art glossy" data-model-number="03">
+            <span class="model-number" aria-label="Model 03">03</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 03"><img src="images/Screenshot 2026-08-07 133938.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="gel art glossy" data-model-number="04">
+            <span class="model-number" aria-label="Model 04">04</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 04"><img src="images/nokti14.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="gel art" data-model-number="05">
+            <span class="model-number" aria-label="Model 05">05</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 05"><img src="images/nokti1.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="gel art bridal french" data-model-number="06">
+            <span class="model-number" aria-label="Model 06">06</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 06"><img src="images/nokti8.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="gel art bridal french" data-model-number="07">
+            <span class="model-number" aria-label="Model 07">07</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 07"><img src="images/nokti15.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="gel art bridal" data-model-number="08">
+            <span class="model-number" aria-label="Model 08">08</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 08"><img src="images/nokti16.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="gel art glossy" data-model-number="09">
+            <span class="model-number" aria-label="Model 09">09</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 09"><img src="images/nokti17.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="gel art bridal french" data-model-number="10">
+            <span class="model-number" aria-label="Model 10">10</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 10"><img src="images/nokti18.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="gel art glossy" data-model-number="11">
+            <span class="model-number" aria-label="Model 11">11</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 11"><img src="images/nokti19.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="gel art glossy" data-model-number="12">
+            <span class="model-number" aria-label="Model 12">12</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 12"><img src="images/nokti13.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="gel art french bridal" data-model-number="13">
+            <span class="model-number" aria-label="Model 13">13</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 13"><img src="images/nokti7.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="gel art  french" data-model-number="14">
+            <span class="model-number" aria-label="Model 14">14</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 14"><img src="images/nokti.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="gel bridal glossy" data-model-number="15">
+            <span class="model-number" aria-label="Model 15">15</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 15"><img src="images/nokti5.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="gel art glossy bridal" data-model-number="16">
+            <span class="model-number" aria-label="Model 16">16</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 16"><img src="images/nokti20.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="gel art " data-model-number="17">
+            <span class="model-number" aria-label="Model 17">17</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 17"><img src="images/nokti21.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="gel art glossy" data-model-number="18">
+            <span class="model-number" aria-label="Model 18">18</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 18"><img src="images/nokti22.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="gel art glossy bridal" data-model-number="19">
+            <span class="model-number" aria-label="Model 19">19</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 19"><img src="images/nokti23.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="gel art glossy french" data-model-number="20">
+            <span class="model-number" aria-label="Model 20">20</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 20"><img src="images/nokti24.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="gel  glossy" data-model-number="12">
+            <span class="model-number" aria-label="Model 21">21</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 21"><img src="images/nokti6.png" alt="" /></button>
+          </article>
+          <article class="gallery-card" data-category="gel art glossy" data-model-number="12">
+            <span class="model-number" aria-label="Model 22">22</span>
+            <button class="gallery-image-button" type="button" aria-label="Pogledaj model 22  "><img src="images/nokti3.png" alt="" /></button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="face-treatment-modal" id="faceTreatmentModal" aria-hidden="true">
+      <div class="face-treatment-modal-card" role="dialog" aria-modal="true" aria-labelledby="faceTreatmentTitle">
+        <button class="modal-close face-treatment-modal-close" type="button" aria-label="Zatvori listu tretmana">×</button>
+        <p class="autenticnidizajn">Luksuzna njega lica</p>
+        <h2 id="faceTreatmentTitle">Tretmani lica u ponudi</h2>
+        <p>Izaberite tretman koji želite da zakažete:</p>
+        <div class="face-treatment-options">
+          <a href="contact.html?service=Higijenski%20tretman">Higijenski tretman</a>
+          <a href="contact.html?service=Hijaluronski%20tretman">Hijaluronski tretman</a>
+          <a href="contact.html?service=Collagen%20tretman">Collagen tretman</a>
+          <a href="contact.html?service=Oxy%20tretman%20lica%20sa%20kiseonikom">Oxy tretman lica sa kiseonikom</a>
+          <a href="contact.html?service=Corrective%20tretman%20by%20Skeyndor">Corrective tretman by Skeyndor</a>
+          <a href="contact.html?service=Njega%20suve%20ko%C5%BEe%20%28Aquatherm%20by%20Skeyndor%29">Njega suve kože (Aquatherm by Skeyndor)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="galleryModal" aria-hidden="true">
+      <div class="modal-card">
+        <button class="modal-close" id="modalClose">×</button>
+        <img class="modal-logo" src="images/logo.png" alt="Golden Style" />
+        <img id="modalImage" src="" alt="Pregled izabranog dizajna" />
+        <a class="btn btn-primary" id="modalRequestButton" href="contact.html">Zatraži ovaj dizajn</a>
+      </div>
+    </div>
+
+    <script src="nav.js" defer></script>
+    <script src="services.js"></script>
+  </body>
+</html>

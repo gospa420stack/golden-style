@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt | Golden Style</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="nav container">
+        <a class="brand" href="index.html" aria-label="Golden Style početna stranica">
+          <img src="images/logo.png" alt="Golden Style" />
+        </a>
+        <button class="mobile-menu-toggle" type="button" aria-label="Otvori navigacioni meni" aria-expanded="false" aria-controls="site-navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="site-navigation">
+          <a href="index.html">Početna</a>
+          <a href="services.html">Usluge</a>
+          <a href="aboutus.html">O nama</a>
+          <a class="active" href="contact.html">Kontakt</a>
+        </div>
+      </nav>
+
+      <div class="container hero-inner">
+        <p class="autenticnidizajn">Kontaktirajte nas</p>
+        <h1>Zakažite svoj termin.</h1>
+        <p>Kontaktirajte nas za rezervacije, slobodne termine i inspiraciju za stilizovanje.</p>
+      </div>
+    </header>
+
+    <main class="container contact-grid">
+     
+
+      <section class="contact-card contact-form-card">
+        <h2>Rezervacija</h2>
+
+        <div class="service-chip-wrap">
+          <span id="selectedService" class="selected-service">Odabrana usluga: <strong>nije odabrana</strong></span>
+        </div>
+
+        <form class="contact-form" id="contactForm" method="post" action="https://api.web3forms.com/submit">
+          <input type="hidden" name="access_key" value="c438aec6-1af6-4275-9310-81c76b254a81" />
+          <input type="hidden" name="service" id="serviceHiddenInput" value="" />
+          <input type="hidden" name="model_number" id="modelNumberHiddenInput" value="" />
+
+          <label for="nameInput">Ime i prezime</label>
+          <input type="text" id="nameInput" name="name" placeholder="Vaše ime" required />
+
+          <label for="phoneInput">Telefon</label>
+          <input type="tel" id="phoneInput" name="phone" placeholder="+387 xx xxx xxx" required />
+
+          <label for="serviceInput">Usluga</label>
+          <select id="serviceInput" name="serviceSelect">
+            <option value="">Izaberite uslugu</option>
+            <option value="Gel Set">Gel Set</option>
+            <option value="Acrylic Sculpt">Acrylic Sculpt</option>
+            <option value="Luksuzna njega lica">Luksuzna njega lica</option>
+            <option value="Lash Lift">Lash Lift</option>
+            <option value="Lipomodelovanje">Lipomodelovanje</option>
+            <option value="Presoterapija">Presoterapija</option>
+            <option value="Pedikir">Pedikir</option>
+          </select>
+
+          <label for="notesInput">Napomena</label>
+          <textarea id="notesInput" name="notes" rows="4" placeholder="Napišite želju ili dogovor"></textarea>
+
+          <button type="submit" class="btn btn-primary">Zakaži termin</button>
+          <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+        <section class="contact-card">
+        <h2>Zakažite ili se informišite</h2>
+        <p>Telefon: +387 65 730 749</p>
+        <p>WhatsApp: +387 65 730 749</p>
+        <p>Email: goldenstyle@gmail.com</p>
+      </section>
+
+      <section class="contact-card">
+        <h2>Radno vrijeme studija</h2>
+        <p> Pon–Pet: 10:00 AM – 7:00 PM</p>
+        <p>Sub: 9:00 AM – 5:00 PM</p>
+        <p>Ned: Po zahtjevu</p>
+      </section>
+    </main>
+
+    <script src="nav.js" defer></script>
+    <script src="contact.js"></script>
+  </body>
+</html>
