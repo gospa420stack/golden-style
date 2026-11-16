@@ -238,14 +238,36 @@ function closeServicePreviewModal() {
   servicePreviewReturnFocus = null;
 }
 
+function selectSignatureCard(card) {
+  signatureCards.forEach((item) => {
+    item.classList.toggle('is-touched', item === card);
+
+    if (item !== card && item.contains(document.activeElement) && document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
+  });
+}
+
 signatureCards.forEach((card) => {
-  card.addEventListener('touchstart', () => {
-    card.classList.add('is-touched');
-  }, { passive: true });
+  card.addEventListener('click', (event) => {
+    const bookingLink = event.target instanceof Element && event.target.closest('.signature-book-button');
+
+    if (bookingLink && !card.classList.contains('is-touched') && window.matchMedia('(hover: none)').matches) {
+      event.preventDefault();
+    }
+
+    selectSignatureCard(card);
+  }, true);
 
   const bookingLink = card.querySelector('.signature-book-button');
   if (bookingLink) {
     bookingLink.addEventListener('click', (event) => event.stopPropagation());
+  }
+});
+
+document.addEventListener('click', (event) => {
+  if (!(event.target instanceof Element) || !Array.from(signatureCards).some((card) => card.contains(event.target))) {
+    selectSignatureCard(null);
   }
 });
 
@@ -305,13 +327,6 @@ function openServiceModal(card) {
   servicePreviewModalText.textContent = `${descriptionText}${price ? ` — ${price.textContent.trim()}` : ''}`;
 
   serviceTreatmentList.innerHTML = '';
-
-  const serviceOption = document.createElement('button');
-  serviceOption.type = 'button';
-  serviceOption.className = 'service-treatment-option active';
-  serviceOption.textContent = 'Konsultacija i rezervacija';
-
-  serviceTreatmentList.appendChild(serviceOption);
 
   serviceBookButton.textContent = `Zakažite ${titleText}`;
   serviceBookButton.href = `contact.html?service=${encodeURIComponent(titleText)}`;

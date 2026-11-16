@@ -38,7 +38,7 @@ a {
 
 .hero {
   min-height: 100vh;
-  background:  linear-gradient(120deg, rgba(9, 9, 9, 0.8), rgba(0, 0, 0, 0.08)),url('images/Untitleddesign.png') center/cover;
+  background:  linear-gradient(120deg, rgba(9, 9, 9, 0.8), rgba(0, 0, 0, 0.08)),url('images/Untitleddesignn.webp') center/cover;
   color: white;
   padding-bottom: 4rem;
 }
@@ -405,6 +405,7 @@ section {
   border-radius: 16px;
   background: rgba(25, 20, 17, 0.72);
   opacity: 0;
+  pointer-events: none;
   transition: opacity 220ms ease;
 }
 
@@ -424,6 +425,7 @@ section {
 .signature-card:focus-within .signature-card__overlay,
 .signature-card.is-touched .signature-card__overlay {
   opacity: 1;
+  pointer-events: auto;
 }
 
 .signature-book-button {
@@ -448,8 +450,15 @@ section {
 }
 
 @media (hover: none) {
-  .signature-card__overlay { opacity: 0; }
-  .signature-card.is-touched .signature-card__overlay { opacity: 1; }
+  .signature-card:hover .signature-card__overlay {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .signature-card.is-touched .signature-card__overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 
 .service-grid {
@@ -870,7 +879,6 @@ input, select, textarea {
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
-    touch-action: pan-x;
   }
 
   .signature-grid::-webkit-scrollbar { display: none; }
